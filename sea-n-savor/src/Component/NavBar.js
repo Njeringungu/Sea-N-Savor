@@ -12,31 +12,19 @@ function NavBar(){
       };
     return(
         <nav>
-            <NavLink to="/" exact
+            <NavLink to="/" 
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}>Home</NavLink> 
-            <NavLink to="/menu" exact
+        >Home</NavLink> 
+            <NavLink to="/menu" 
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}>Menu</NavLink>
-            <NavLink to="/cart" exact
+        >Menu</NavLink>
+            <NavLink to="/cart" 
+        >Cart</NavLink>
+            <NavLink to="/contact" 
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}>Cart</NavLink>
-            <NavLink to="/contact" exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}>Contact</NavLink>
-            <NavLink to="/search" exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}>Search</NavLink>
+        >Contact</NavLink>
+            <NavLink to="/search" 
+        >Search</NavLink>
         </nav>
     )
 }

@@ -1,12 +1,21 @@
 import React from 'react';
 
 
-function Menu(){
+function Menu({meals}){
+
 
     return(
-        <div>
-            <p>menu</p>
+        <>
+
+           
+           {meals.map((meal)=>(
+        <div key={meal.idMeal}>
+            <p>{meal.strMeal}</p>
+          <img src={meal.strMealThumb} alt="" />
         </div>
+    ))};
+           
+        </>
     )
 }
 
