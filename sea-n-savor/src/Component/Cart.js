@@ -4,22 +4,20 @@ function Cart(){
     const [spicy,setSpicy]=useState("");
     const[size,setSize]=useState("");
 
- const [count,setCount] = useState(0);
-const incrementCount=()=>{
-    setCount((count)=>count+ 1)
-}
-function handleSubmit(e){
-    e.preventDefault();
-}
+ 
     return(
         
 
-      <div onSubmit={handleSubmit} className='card'>
-      <button >-</button>
-      
-      <button onClick={incrementCount} >+:{count}</button>
-      <button value="delete">Delete</button>
-      <select
+  <div className="cart">
+
+
+    <div className="">
+        <button className="remove">-</button>
+        <button  className="add">+</button>
+
+    </div>
+    <div>
+    <select
           id="type"  value={size} onChange={(e)=>setSize(e.target.value)}
           >Size
           <option value="large">Large</option>
@@ -34,9 +32,19 @@ function handleSubmit(e){
           <option value="non-spicy">Non-spicy</option>
           
         </select>
+        </div>
 
+        <div>
+          <button value="delete">Delete</button>
+        </div>
+    <div className="row">
+       <button >Checkout </button>
+    </div>
+      
+      
 
-        <input type="submit" value="Add to cart" />
+        
+        
 
       </div>
 

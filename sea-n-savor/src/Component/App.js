@@ -6,6 +6,7 @@ import Menu from "./Menu";
 import NavBar from "./NavBar";
 import Search from "./Search";
 import Contact from "./Contact";
+
 // import ItemCard from './ItemCard';
 function App() {
 
@@ -22,7 +23,7 @@ console.log(meals)
   return (
     
 
-    <div className="App">
+    <div className="App" >
     {/* <ItemCard/> */}
       <NavBar/>
       

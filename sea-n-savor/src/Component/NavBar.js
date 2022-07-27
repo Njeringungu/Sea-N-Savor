@@ -11,20 +11,12 @@ function NavBar(){
         color: "white",
       };
     return(
-        <nav>
-            <NavLink to="/" 
-        style={linkStyles}
-        >Home</NavLink> 
-            <NavLink to="/menu" 
-        style={linkStyles}
-        >Menu</NavLink>
-            <NavLink to="/cart" style={linkStyles}
-        >Cart</NavLink>
-            <NavLink to="/contact" 
-        style={linkStyles}
-        >Contact</NavLink>
-            <NavLink to="/search" style={linkStyles}
-        >Search</NavLink>
+<nav className='nav-bar'>
+    <NavLink to="/" style={linkStyles}>Home</NavLink> 
+    <NavLink to="/menu" style={linkStyles}>Menu</NavLink>
+    <NavLink to="/cart" style={linkStyles}>Cart</NavLink>
+    <NavLink to="/contact" style={linkStyles}>Contact</NavLink>
+    <NavLink to="/search" style={linkStyles}>Search</NavLink>
         </nav>
     )
 }
