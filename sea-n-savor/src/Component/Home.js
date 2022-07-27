@@ -1,11 +1,11 @@
 import React from 'react';
-import ItemCard from './ItemCard';
+// import ItemCard from './ItemCard';
 
 function Home(){
 
     return(
-        <div>
-           <ItemCard/>
+        <div className="home">
+          Welcome to Sea n' Savor
         </div>
     )
 }

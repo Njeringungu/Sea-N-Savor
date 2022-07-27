@@ -6,7 +6,7 @@ import Menu from "./Menu";
 import NavBar from "./NavBar";
 import Search from "./Search";
 import Contact from "./Contact";
-import ItemCard from './ItemCard';
+// import ItemCard from './ItemCard';
 function App() {
 
 
@@ -23,16 +23,15 @@ console.log(meals)
     
 
     <div className="App">
-    <ItemCard/>
+    {/* <ItemCard/> */}
       <NavBar/>
-      <Menu meals={meals}/>
-      <Search meals={meals}/>
+      
       <Routes>
         
-        <Route exact path="/menu" element={<Menu />} />
+        <Route exact path="/menu" element={<Menu meals={meals}/>} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/search" element={<Search />} />
+        <Route exact path="/search" element={<Search meals={meals}/>} />
         <Route exact path="/" element={<Home />} />
         </Routes>
 

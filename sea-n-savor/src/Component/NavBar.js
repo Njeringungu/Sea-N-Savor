@@ -18,12 +18,12 @@ function NavBar(){
             <NavLink to="/menu" 
         style={linkStyles}
         >Menu</NavLink>
-            <NavLink to="/cart" 
+            <NavLink to="/cart" style={linkStyles}
         >Cart</NavLink>
             <NavLink to="/contact" 
         style={linkStyles}
         >Contact</NavLink>
-            <NavLink to="/search" 
+            <NavLink to="/search" style={linkStyles}
         >Search</NavLink>
         </nav>
     )

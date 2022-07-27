@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Search(){
+function Search({meals}){
 
     return(
 
         <div>
-            <input ></input>
+            <input type= "text" placeholder="Search.."></input>
         </div>
     )
 }

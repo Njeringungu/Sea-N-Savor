@@ -1,3 +1,9 @@
+.home {background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
