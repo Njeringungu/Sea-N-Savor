@@ -25,7 +25,7 @@ body {
 button.add {
   width: 2.5cm;
   
-  background-color: blue;
+  background-color: #902222;
   
   text-align: center;
 }
@@ -50,8 +50,8 @@ button{
   padding: 0.2rem;
   margin: 0.1rem;
   border-radius: 0.5rem;
-  border: 0.1rem blue;
-  background-color:blue;
+  border: 0.1rem #902222;
+  background-color:#902222;
   width: 5cm;
   }
 
