@@ -12,11 +12,11 @@ function App() {
 
 
   const [meals,setMeals]=useState([])
-const mealApi="https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
+const mealApi="https://seansavor.herokuapp.com/meals"
 useEffect(()=>{
     fetch(mealApi)
     .then((response)=>response.json())
-    .then((data)=>{setMeals(data.meals)
+    .then((dishes)=>{setMeals(dishes)
     })
 },[]);
 console.log(meals)
@@ -24,7 +24,7 @@ console.log(meals)
     
 
     <div className="App" >
-    {/* <ItemCard/> */}
+    
       <NavBar/>
       
       <Routes>
