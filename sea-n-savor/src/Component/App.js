@@ -26,7 +26,8 @@ console.log(meals)
     <div className="App" >
     
       <NavBar/>
-      
+      <h1>Sea N' Savor</h1>
+      <p>Savor the flavors of the sea!</p>
       <Routes>
         
         <Route exact path="/menu" element={<Menu meals={meals}/>} />

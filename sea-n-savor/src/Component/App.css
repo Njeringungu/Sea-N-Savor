@@ -54,10 +54,15 @@ button{
 
 
 .menu-container{ 
+  display: grid;
+grid-auto-flow: column;
+grid-column-gap: 10px;
   display: flex; 
 
 flex-wrap: wrap;
-margin-left:5cm;
+margin: left 5cm;
+margin: 3cm;
+
 }
 
  .text{
