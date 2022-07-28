@@ -1,8 +1,17 @@
 body {
-  background-color: rgb(89, 75, 75);
+  background-color:bisque;
     background-repeat: no-repeat;
     background-size: cover;
    
+  }
+
+ div.header {
+    text-align: center;
+   font-style: italic ;
+   font-family:cursive;
+   font-size: larger;
+   color: brown;
+
   }
 
 .cart{
@@ -32,7 +41,7 @@ button.remove {
 
 button.addcart{width: 2.5cm;
   
-  background-color: red;
+  background-color: #902222;
   
   text-align: center;}
 
@@ -70,7 +79,7 @@ margin: 3cm;
  }
   .card img{
     width: 280px;
-  border: solid 5px rgb(144, 34, 34);
+  border: solid 5px #902222;
   border-width: 50%;
   display: flex;  
   flex-wrap: wrap;

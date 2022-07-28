@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-
+import Search from './Search';
 
 function Menu({meals}){
 
@@ -20,6 +20,8 @@ function Menu({meals}){
         </div>
     ))};
            
+
+          
         </div>
     )
 }

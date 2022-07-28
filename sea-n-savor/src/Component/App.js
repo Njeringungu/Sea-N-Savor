@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import { Route, Routes } from 'react-router-dom'
-import Cart from "./Cart";
+import Form from "./Form";
 import Home from "./Home";
 import Menu from "./Menu";
 import NavBar from "./NavBar";
@@ -20,18 +20,23 @@ useEffect(()=>{
     })
 },[]);
 console.log(meals)
+
+
+
   return (
     
 
     <div className="App" >
     
       <NavBar/>
-      <h1>Sea N' Savor</h1>
-      <p>Savor the flavors of the sea!</p>
+           <div className='header'>
+            <h1>Sea N' Savor</h1>
+           <p>Savor the flavors of the sea!</p>
+           </div>  
       <Routes>
         
         <Route exact path="/menu" element={<Menu meals={meals}/>} />
-        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/form" element={<Form/>} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/search" element={<Search meals={meals}/>} />
         <Route exact path="/" element={<Home />} />

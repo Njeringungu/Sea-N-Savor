@@ -6,15 +6,16 @@ function NavBar(){
         width: "50px",
         padding: "12px",
         margin: "0 6px 6px",
-        background: "Teal",
+        background: "#902222",
         textDecoration: "none",
         color: "white",
+        
       };
     return(
 <nav className='nav-bar'>
     <NavLink to="/" style={linkStyles}>Home</NavLink> 
     <NavLink to="/menu" style={linkStyles}>Menu</NavLink>
-    <NavLink to="/cart" style={linkStyles}>Cart</NavLink>
+    <NavLink to="/form" style={linkStyles}>Form</NavLink>
     <NavLink to="/contact" style={linkStyles}>Contact</NavLink>
     <NavLink to="/search" style={linkStyles}>Search</NavLink>
         </nav>

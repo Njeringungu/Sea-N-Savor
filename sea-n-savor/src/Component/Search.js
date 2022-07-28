@@ -1,10 +1,11 @@
 import React,{useState} from 'react';
 
-function Search({meals}){
+function Search(){
 
-// const[inStock,setInstock]=useState(true)
 
-// const setInStock=meals.filter(meal=>{inStock?meal.name:null}).filter(meals.name.includes(Search))
+
+
+
 
     return(
 
