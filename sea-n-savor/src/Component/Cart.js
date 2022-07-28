@@ -11,12 +11,10 @@ function Cart(){
   <div className="cart">
 
 
-    <div className="">
-        <button className="remove">-</button>
-        <button  className="add">+</button>
-
-    </div>
+    
     <div>
+
+
     <select
           id="type"  value={size} onChange={(e)=>setSize(e.target.value)}
           >Size
@@ -44,7 +42,7 @@ function Cart(){
       
 
         
-        
+       
 
       </div>
 
