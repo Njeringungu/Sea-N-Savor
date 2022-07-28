@@ -4,15 +4,14 @@ import Form from "./Form";
 import Home from "./Home";
 import Menu from "./Menu";
 import NavBar from "./NavBar";
-// import Search from "./Search";
+
 import Contact from "./Contact";
 
 
 function App() {
 
-
-  const [meals,setMeals]=useState([])
-  const [remove,setOnRemove]=useState(true)
+const [meals,setMeals]=useState([])
+const [remove,setOnRemove]=useState(true)
 
 
 
@@ -50,7 +49,7 @@ function addDishes(dish){
         <Route exact path="/menu" element={<Menu meals={meals} onDelete={onDelete}/>} />
         <Route exact path="/form" element={<Form addDishes={addDishes}  />} />
         <Route exact path="/contact" element={<Contact />} />
-        {/* <Route exact path="/search" element={<Search meals={meals}/>} /> */}
+       
         <Route exact path="/" element={<Home />} />
         </Routes>
 
