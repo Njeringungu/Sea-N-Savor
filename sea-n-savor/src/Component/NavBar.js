@@ -17,7 +17,7 @@ function NavBar(){
     <NavLink to="/menu" style={linkStyles}>Menu</NavLink>
     <NavLink to="/form" style={linkStyles}>Form</NavLink>
     <NavLink to="/contact" style={linkStyles}>Contact</NavLink>
-    <NavLink to="/search" style={linkStyles}>Search</NavLink>
+    {/* <NavLink to="/search" style={linkStyles}>Search</NavLink> */}
         </nav>
     )
 }

@@ -1,11 +1,7 @@
 import React,{useState} from 'react';
-import Search from './Search';
 
-function Menu({meals}){
 
-    function handleClick(){
-        console.log("clicked")
-    }
+function Menu({meals,onDelete}){
 
     return(
         <div className="menu-container">
@@ -15,10 +11,10 @@ function Menu({meals}){
             <img src={meal.image} alt="" />
           <p className='text'>{meal.meal}</p>
           <p className='text'>{meal.price}</p>
-    <button className='addcart' onClick={handleClick}>Add to Cart</button>
+    <button id={meal.id} onClick={handleDelete}>Delete</button>
             
         </div>
-    ))};
+    ))}
            
 
           

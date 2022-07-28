@@ -4,24 +4,36 @@ import Form from "./Form";
 import Home from "./Home";
 import Menu from "./Menu";
 import NavBar from "./NavBar";
-import Search from "./Search";
+// import Search from "./Search";
 import Contact from "./Contact";
 
-// import ItemCard from './ItemCard';
+
 function App() {
 
 
   const [meals,setMeals]=useState([])
+  const [remove,setOnRemove]=useState(true)
+
+
+
 const mealApi="https://seansavor.herokuapp.com/meals"
 useEffect(()=>{
     fetch(mealApi)
     .then((response)=>response.json())
     .then((dishes)=>{setMeals(dishes)
     })
-},[]);
+},[remove]);
+function onDelete(deletedItem){
+  setMeals(meals.filter(meal=>meal.id!==deletedItem.id))
+  setOnRemove(()=>!remove)
+}
+
+
 console.log(meals)
-
-
+function addDishes(dish){
+  const newState=[...meals,dish]
+  setMeals(newState)
+}
 
   return (
     
@@ -35,10 +47,10 @@ console.log(meals)
            </div>  
       <Routes>
         
-        <Route exact path="/menu" element={<Menu meals={meals}/>} />
-        <Route exact path="/form" element={<Form/>} />
+        <Route exact path="/menu" element={<Menu meals={meals} onDelete={onDelete}/>} />
+        <Route exact path="/form" element={<Form addDishes={addDishes}  />} />
         <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/search" element={<Search meals={meals}/>} />
+        {/* <Route exact path="/search" element={<Search meals={meals}/>} /> */}
         <Route exact path="/" element={<Home />} />
         </Routes>
 

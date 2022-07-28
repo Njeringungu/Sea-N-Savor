@@ -1,18 +1,18 @@
-import React,{useState} from 'react';
+// import React,{useState} from 'react';
 
-function Search(){
-
-
+// function Search(){
 
 
 
 
-    return(
 
-        <div>
-            <input type= "text" placeholder="Search.."></input>
-        </div>
-    )
-}
 
-export default Search;
+//     return(
+
+//         <div>
+//             <input type= "text" placeholder="Search.."></input>
+//         </div>
+//     )
+// }
+
+// export default Search;
