@@ -1,8 +1,8 @@
 body {
-  background-color:bisque;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color:bisque ;
    
+    
+  
   }
 
  div.header {
@@ -19,14 +19,30 @@ body {
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
+    
   }
+.nav-bar{
+  padding-top: 10px;
+  background-color: #902222;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
 
+.form{ font-size: 25px;
+  width: 400px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;}
 
-
-button.addcart{width: 2.5cm;
+button.addcart{width: 1cm;
   
   background-color: #902222;
-  
+  color: white;
   text-align: center;}
 
 button{
@@ -37,12 +53,18 @@ button{
   border: 0.1rem #902222;
   background-color:#902222;
   width: 5cm;
+  color: white;
   }
 
 
 
 
-
+.card{
+ 
+  box-shadow: 0 3px 10px rgba(16, 11, 11, 0.2);
+  margin-top: 40px;
+  border-radius: 10px;
+}
 
 
 
@@ -60,11 +82,12 @@ margin: 3cm;
 
  .text{
   font-style: italic;
+
  }
   .card img{
-    width: 280px;
-  border: solid 5px #902222;
-  border-width: 50%;
+    width: 370px;
+  
+  border-radius: 10px;
   display: flex;  
   flex-wrap: wrap;
   }

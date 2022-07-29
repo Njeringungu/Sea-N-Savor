@@ -9,14 +9,25 @@ function NavBar(){
         background: "#902222",
         textDecoration: "none",
         color: "white",
+        borderRadius:"10px",
+        justifyContent: "space-around",
+
         
+        //  backgroundColor: "#2b5876",
+        // padding: 10px;
+        // border-radius: 10px;
+        // margin-bottom: 10px;
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        // color: white;
       };
     return(
 <nav className='nav-bar'>
-    <NavLink to="/" style={linkStyles}>Home</NavLink> 
-    <NavLink to="/menu" style={linkStyles}>Menu</NavLink>
-    <NavLink to="/form" style={linkStyles}>Form</NavLink>
-    <NavLink to="/contact" style={linkStyles}>Contact</NavLink>
+    <NavLink className="nav-link" to="/" style={linkStyles}>Home</NavLink> 
+    <NavLink className="nav-link" to="/menu" style={linkStyles}>Menu</NavLink>
+    <NavLink className="nav-link" to="/form" style={linkStyles}>Form</NavLink>
+    <NavLink className="nav-link" to="/contact" style={linkStyles}>Contact</NavLink>
     {/* <NavLink to="/search" style={linkStyles}>Search</NavLink> */}
         </nav>
     )

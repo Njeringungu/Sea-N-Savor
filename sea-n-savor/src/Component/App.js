@@ -13,7 +13,10 @@ function App() {
 const [meals,setMeals]=useState([])
 const [remove,setOnRemove]=useState(true)
 
-
+const [cart,setCart]=useState([])
+function addToCart(dish){
+  setCart([...cart, dish])
+}
 
 const mealApi="https://seansavor.herokuapp.com/meals"
 useEffect(()=>{
@@ -46,7 +49,7 @@ function addDishes(dish){
            </div>  
       <Routes>
         
-        <Route exact path="/menu" element={<Menu meals={meals} onDelete={onDelete}/>} />
+        <Route exact path="/menu" element={<Menu meals={meals} onDelete={onDelete} addToCart={addToCart}/>} />
         <Route exact path="/form" element={<Form addDishes={addDishes}  />} />
         <Route exact path="/contact" element={<Contact />} />
        
