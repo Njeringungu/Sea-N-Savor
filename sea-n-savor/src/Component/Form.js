@@ -29,13 +29,13 @@ console.log(dishes)
   return(
   
   <form onSubmit = {handleSubmit}>
- <label htmlFor="name">meal</label><input type="text" name="meal" value={dishes.meal} onChange={handleChange}/>
+ <label htmlFor="name">Meal</label><input type="text" name="meal" value={dishes.meal} onChange={handleChange}/>
 
- <label htmlFor="image">image</label>
+ <label htmlFor="image">Image</label>
   <input type="text" name="image" value={dishes.image} onChange={handleChange}/>
 
 
-<label htmlFor="price">price</label>
+<label htmlFor="price">Price</label>
   <input type="text" name="price" value={dishes.price} onChange={handleChange}/>
 
 
