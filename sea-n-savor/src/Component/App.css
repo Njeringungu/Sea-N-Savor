@@ -107,3 +107,30 @@ nav a.active{
   background-color: gray;
   
 }
+.input{
+border-radius: 5px;
+margin-bottom: 5px;
+width: 200px;
+height: 50px;
+
+
+}
+.contact-form{
+  margin: auto;
+ 
+  display: flex;
+  justify-content: center;
+}
+form{
+  text-align: center;
+  border: gray 0.5px solid;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(16, 11, 11, 0.2);
+}
+.flex-form{
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
