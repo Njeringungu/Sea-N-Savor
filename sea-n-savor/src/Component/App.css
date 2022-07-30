@@ -5,7 +5,8 @@ body {
   
   }
 
- div.header {
+ 
+  div.header {
     text-align: center;
    font-style: italic ;
    font-family:cursive;
@@ -21,7 +22,7 @@ body {
     flex-direction: column;
     
   }
-.nav-bar{
+nav{
   padding-top: 10px;
   background-color: #902222;
   padding: 10px;
@@ -30,14 +31,25 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  
+  
+  
 }
+  nav a{
+    text-decoration:none;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+  } 
 
-.form{ font-size: 25px;
+
+.form{ 
+  font-size: 25px;
   width: 400px;
   margin: 0.5rem;
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+}
 
 button.addcart{width: 1cm;
   
@@ -73,11 +85,11 @@ button{
 grid-auto-flow: column;
 grid-column-gap: 10px;
   display: flex; 
-
+align-content: center;
 flex-wrap: wrap;
 margin: left 5cm;
 margin: 3cm;
-
+padding-left: 130px;
 }
 
  .text{
@@ -91,4 +103,7 @@ margin: 3cm;
   display: flex;  
   flex-wrap: wrap;
   }
+nav a.active{
+  background-color: gray;
   
+}

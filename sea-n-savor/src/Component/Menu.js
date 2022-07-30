@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-function Menu({meals,onDelete,addToCart}){
+function Menu({meals,onDelete}){
 function handleCart(){
-    addToCart()
+   
 }
+
 function handleDelete(e){
 let id =e.target.id;
         fetch (`https://seansavor.herokuapp.com/meals/${id}`,{
@@ -21,7 +22,6 @@ return(
     <img src={meal.image} alt="" />
     <p className='text'>{meal.meal}</p>
     <p className='text'>{meal.price}</p>
-    <button id={meal.id}onClick={handleCart}>Add to Cart</button>
     <button id={meal.id} onClick={handleDelete}>Delete</button>
      </div>
     ))}
