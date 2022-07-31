@@ -27,8 +27,10 @@ function handleSubmit(e){
 
 console.log(dishes)
   return(
-  
+  <>
+  <h1>Add your favourite Menu below.</h1>
   <form onSubmit = {handleSubmit}>
+   
  <label htmlFor="name">Meal</label><input type="text" name="meal" value={dishes.meal} onChange={handleChange}/>
 
  <label htmlFor="image">Image</label>
@@ -41,7 +43,7 @@ console.log(dishes)
 
   <input type="submit" value="Submit" />
   </form>
-  
+  </>
     )
 }
 
