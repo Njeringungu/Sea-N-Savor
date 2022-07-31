@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sea-N-Savor/static/css/main.2b79f97d.css",
+    "main.js": "/Sea-N-Savor/static/js/main.1d502612.js",
+    "index.html": "/Sea-N-Savor/index.html",
+    "main.2b79f97d.css.map": "/Sea-N-Savor/static/css/main.2b79f97d.css.map",
+    "main.1d502612.js.map": "/Sea-N-Savor/static/js/main.1d502612.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b79f97d.css",
+    "static/js/main.1d502612.js"
+  ]
+}
