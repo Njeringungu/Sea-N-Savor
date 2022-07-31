@@ -25,6 +25,7 @@ Deliverables
 The NavBar has three routes ,menu form and contact.
 Used fetch to GET menu data,POST and DELETE.
 Deploy db.json on heroku,link:https://seansavor.herokuapp.com/meals
+A single page App
 
 AUTHOR
 
